@@ -1,4 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
+import Welcome from "./components/Welcome"
 import Home from "./routes/home"
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}>
+          <Route index element={<Welcome />} />
         </Route>
         <Route path="*" element={<Navigate to={"/"} />} />
       </Routes>
