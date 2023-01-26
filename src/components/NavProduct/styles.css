@@ -1,0 +1,10 @@
+.card-nav-product {
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-font-secundary);
+    font-size: 16px;
+    padding: 20px;
+}
+
+.category-product {
+    margin-right: 20px;
+}
