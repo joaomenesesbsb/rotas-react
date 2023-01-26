@@ -1,5 +1,6 @@
 import './styles.css'
 import homeImg from '../../assets/home.png';
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
 
@@ -7,11 +8,19 @@ export default function Header() {
         <header>
             <nav className='nav-main container'>
                 <div className='nav-content'>
-                    <div className='nav-item'>inicio</div>
-                    <div className='nav-item'>Produtos</div>
-                    <div className='nav-item'>sobre nós</div>
+                    <NavLink to={'/home'} className='nav-item'>
+                        inicio
+                    </NavLink>
+                    <NavLink to={'/products'} className='nav-item'>
+                        Produtos
+                    </NavLink>
+                    <NavLink to={'/about'} className='nav-item'>
+                        Sobre nos
+                    </NavLink>
                 </div>
-                <img src={homeImg} alt="home" />
+                <NavLink to={'/home'}>
+                    <img src={homeImg} alt="home" />
+                </NavLink>
             </nav>
         </header>
     );

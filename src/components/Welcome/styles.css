@@ -2,4 +2,5 @@ h2 {
    color: var(--color-font-secundary); 
    font-size: 24px;
    padding: 0 20px;
+   font-weight: 700;
 }
