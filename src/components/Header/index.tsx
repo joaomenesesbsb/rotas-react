@@ -8,13 +8,13 @@ export default function Header() {
         <header>
             <nav className='nav-main container'>
                 <div className='nav-content'>
-                    <NavLink to={'/home'} className='nav-item'>
+                    <NavLink to={'/home'} className={({isActive})=> isActive ? "nav-item menu-active" : "nav-item"} >
                         inicio
                     </NavLink>
-                    <NavLink to={'/products'} className='nav-item'>
+                    <NavLink to={'/products'} className={({isActive})=> isActive ? "nav-item menu-active" : "nav-item"}>
                         Produtos
                     </NavLink>
-                    <NavLink to={'/about'} className='nav-item'>
+                    <NavLink to={'/about'} className={({isActive})=> isActive ? "nav-item menu-active" : "nav-item"}>
                         Sobre nos
                     </NavLink>
                 </div>
