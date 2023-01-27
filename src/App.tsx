@@ -23,9 +23,8 @@ function App() {
             <Route path="books" element={<Books />} />
           </Route>
           <Route path="about" element={<AboutUs />} />
+          <Route path="not-found" element={<NotFoundResouce />} />
         </Route>
-        <Route path="not-found" element={<NotFoundResouce />} />
-        <Route path="*" element={<Navigate to={"/not-found"} />} />
       </Routes>
     </BrowserRouter>
   )
